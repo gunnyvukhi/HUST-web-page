@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    object-fit: cover;
+    background-color: #FFF;
+}
+
+a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------*/
+/*-----------------------Header-----------------------*/
+/*----------------------------------------------------*/
+
+header {
+    background-image: url("../image/nen-cover.jpg");
+    background-size: 100%;
+    background-position: top;
+    height: 84vh;
+    background-repeat: no-repeat;
+    /* view height */
+    background-attachment: fixed;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.text-site {
+    display: inline-flex;
+    background: linear-gradient(to bottom, rgba(157, 29, 31, 1) 0%, rgba(157, 29, 31, 1) 29%, rgba(157, 29, 31, 0.98) 30%, rgba(157, 29, 31, 0.93) 39%, rgba(157, 29, 31, 0.88) 49%, rgba(157, 29, 31, 0.76) 59%, rgba(157, 29, 31, 0.28) 79%, rgba(157, 29, 31, 0.02) 89%, rgba(157, 29, 31, 0) 100%);
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    z-index: 1;
+    transition-duration: 1s;
+}
+
+#logo-hust {
+    width: 53.5px;
+    height: 80px;
+    margin-left: 10%;
+    margin-top: 1%;
+    display: flex;
+    transform: translate(-10%, 0.2%);
+}
+
+.text-sologan {
+    display: block;
+    width: fit-content;
+    list-style-type: none;
+    margin-left: 16px;
+    margin-top: 1.6%;
+}
+
+.bo {
+    font-weight: bold;
+    font-size: 27px;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 1.42857;
+}
+
+.cuc {
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 1.42857;
+}
+
+.text-modile {
+    display: none;
+    width: fit-content;
+    list-style-type: none;
+    margin-left: 8px;
+    margin-top: 1.6%;
+}
+
+.dong {
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 1.42857;
+}
+
+.line {
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 1.42857;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .text-modile {
+        display: block;
+    }
+
+    #logo-hust {
+        margin-left: 2%;
+    }
+
+    .text-sologan {
+        display: none;
+    }
+}
+
+.nemu-topright {
+    display: flex;
+    width: 44%;
+    justify-content: right;
+    height: fit-content;
+    list-style-type: none;
+    margin-left: 6%;
+}
+
+.nemu {
+    height: fit-content;
+    margin-top: 7%;
+    margin-left: 4%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFF;
+    text-transform: capitalize;
+    line-height: 1.42857;
+}
+
+
+.find {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 4%;
+    margin-top: 7%;
+}
+
+#mg {
+    width: 24px;
+    height: 24px;
+}
+
+.VN-flag {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column-reverse;
+    margin-left: 2.4%;
+    margin-top: 3.6%;
+}
+
+#vn {
+    width: 27px;
+    height: 18px;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+}
+
+#en {
+    width: 27px;
+    height: 18px;
+    background-color: #FFF;
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+}
+
+.section-div {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+}
+
+.section-list {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 9.6%;
+    margin-top: 8.1%;
+    width: 90.4%;
+}
+
+.section {
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 17px;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 1.42857;
+    margin-right: 2.4%;
+    position: relative;
+    z-index: 2;
+    border: none;
+    flex-direction: column;
+}
+
+.collapse-section {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
+
+.collapse-sec {
+    display: inline-block;
+    width :max-content;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+    top: 32px;
+    transition: all 0.8s ease;
+}
+
+.collapse-lst {
+    list-style: none;
+    background-color: #FFF;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+}
+
+a.collapse-text:link {
+    color: #333333;
+    text-decoration: none;
+}
+
+a.collapse-text:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+.collapse {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.42857;
+    color: #333333;
+    padding: 10px;
+    text-transform: none;
+}
+
+a.section-btn:hover, 
+a.section-btn:active {
+    padding-bottom: 3px;
+    border-bottom: #FFF 3px solid;
+}
+
+#sec1:hover .tnemu1,
+#sec1:active .tnemu1{
+    height: 320px;
+    z-index: 5;
+}
+
+a.collapse-text:hover,
+a.collapse-text:active {
+    color: rgb(183, 0, 0);
+}
+
+#sec2:hover .tnemu2,
+#sec2:active .tnemu2{
+    height: 320px;
+    z-index: 5;
+}
+
+#sec3:hover .tnemu3,
+#sec3:active .tnemu3{
+    height: 500px;
+    z-index: 5;
+}
+
+.tnemu4 .collapse-lst{
+    min-width: 12.75vw;
+}
+
+#sec4:hover .tnemu4,
+#sec4:active .tnemu4{
+    height: 320px;
+    z-index: 5;
+}
+
+#sec5:hover .tnemu5,
+#sec5:active .tnemu5{
+    height: 320px;
+    z-index: 5;
+}
+
+#sec6:hover .tnemu6,
+#sec6:active .tnemu6{
+    height: 320px;
+    z-index: 5;
+}
+
+#sec7:hover .tnemu7,
+#sec7:active .tnemu7{
+    height: 320px;
+    z-index: 5;
+}
+
+#sec8:hover .tnemu8,
+#sec8:active .tnemu8{
+    height: 320px;
+    z-index: 5;
+}
+
+/*-- login pop-up --*/
+#Login{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: none;
+}
+
+.exitBack{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.447);
+}
+
+.Login-popup{
+    background-color: #c4c4c4;
+    width: 240px;
+    height: 300px;
+    position: relative;
+    z-index: 11;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Login-popup td {
+    white-space: nowrap;
+}
+.Login-popup img{
+    width: 20px;
+    margin: 4px;
+    margin-right: 8px;
+}
+.Login-popup input{
+    font-size: 16px;
+    font-weight: 400;
+    height: fit-content;
+}
+
+.formHeading{
+    text-align: center;
+    color: #FFF;
+    padding: 16px;
+    background-color: rgb(142, 139, 150);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 24px;
+    width: 240px;
+}
+
+.emailpassSec{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    border-bottom: 3px solid gray;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
